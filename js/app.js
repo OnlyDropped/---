@@ -1,3 +1,4 @@
+
 let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
 let popup = document.querySelector('.popup'); // Само окно
 let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна

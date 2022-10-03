@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Главная страница</title>
 </head>
@@ -93,7 +94,359 @@
     
   </header>
   <main class="main">
-    
+    <section class="slider">
+      <div class="slider__item">
+        <div class="slider__card" style="background: url('img/slider-bg.png') center no-repeat;">
+          <div class="container">
+            <div class="slider__inner">
+              <h1 class="slider__title">Специальные предложения</h1>
+              <span class="slider__subtitle">на строительные материалы и товары для ремонта</span>
+              <a class="slider__more" href="">Подробнее</a>
+            </div>            
+          </div>
+        </div>
+      </div>
+
+      <div class="slider__item">
+        <div class="slider__card" style="background: url('img/slider-bg-2.png') center no-repeat;">
+          <div class="container">
+            <div class="slider__inner">
+              <h1 class="slider__title">Распродажа инструментов</h1>
+              <span class="slider__subtitle slider__subtitle--second">«СтройкаСтор» стремится сделать условия покупки максимально выгодными для каждого покупателя, поэтому на сайте регулярно появляются товары со скидкой</span>
+              <a class="slider__more" href="">Подробнее</a>
+            </div>            
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="discount">
+      <div class="container">
+        <div class="nav">
+          <h2 class="title">Акции</h2>
+          <a class="link" href="">
+            Все акции
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 13L7 7L1 1" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div class="discount__content">
+          <div class="discount__card">
+            <img class="discount__img" src="img/discount/1.png" alt="карточка товара">
+            <div class="discount__info">
+              <p class="discount__heading">Рубероид РКП-350 ТУ, размер материала 1 х 10 м (10м2, 1 рулон)</p>
+              <div class="discount__price">
+                <div class="discount__price-new">449 ₽</div>
+                <div class="discount__price-old">499 ₽</div>
+              </div>
+              <button class="discount__cart btn">В корзину</button>
+            </div>
+            <span class="discount__span">−25%</span>
+          </div>
+          <div class="discount__card">
+            <img class="discount__img" src="img/discount/2.png" alt="карточка товара">
+            <div class="discount__info">
+              <p class="discount__heading">Пена монтажная ТЕХНОНИКОЛЬ MASTER 65 профессиональная всесезонная</p>
+              <div class="discount__price">
+                <div class="discount__price-new">495 ₽</div>
+                <div class="discount__price-old">660 ₽</div>
+              </div>
+              <button class="discount__cart btn">В корзину</button>
+            </div>
+            <span class="discount__span">−25%</span>
+          </div>
+          <div class="discount__card">
+            <img class="discount__img" src="img/discount/3.png" alt="карточка товара">
+            <div class="discount__info">
+              <p class="discount__heading">Сетка "Рабица" яч. 50х50/1,5х10 м-ОЦ</p>
+              <div class="discount__price">
+                <div class="discount__price-new">1 499 ₽</div>
+                <div class="discount__price-old">1 890 ₽</div>
+              </div>
+              <button class="discount__cart btn">В корзину</button>
+            </div>
+            <span class="discount__span">−25%</span>
+          </div>
+          <div class="discount__card">
+            <img class="discount__img" src="img/discount/4.png" alt="карточка товара">
+            <div class="discount__info">
+              <p class="discount__heading">Металлочерепица, цвет коричневый, 1.18 х 1.15 м</p>
+              <div class="discount__price">
+                <div class="discount__price-new">769 ₽</div>
+                <div class="discount__price-old">999 ₽</div>
+              </div>
+              <button class="discount__cart btn">В корзину</button>
+            </div>
+            <span class="discount__span">−25%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="category">
+      <div class="container">
+        <div class="nav">
+          <h2 class="title">Популярные категории</h2>
+          <a class="link" href="">
+            Все категории
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 13L7 7L1 1" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div class="category__content">
+          <div class="category__item">
+            <p class="category__heading">Душевые</p>
+            <img class="category__img" src="img/category/1.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Пиломатериалы</p>
+            <img class="category__img" src="img/category/2.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Линолеум</p>
+            <img class="category__img" src="img/category/3.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Обои</p>
+            <img class="category__img" src="img/category/4.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Инструменты</p>
+            <img class="category__img" src="img/category/5.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Товары для дачи</p>
+            <img class="category__img" src="img/category/6.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Окна</p>
+            <img class="category__img" src="img/category/7.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Двери</p>
+            <img class="category__img" src="img/category/8.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Сантехника</p>
+            <img class="category__img" src="img/category/9.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Краски</p>
+            <img class="category__img" src="img/category/10.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Электротовары</p>
+            <img class="category__img" src="img/category/11.png" alt="карточка товара">
+          </div>
+          <div class="category__item">
+            <p class="category__heading">Интерьер</p>
+            <img class="category__img" src="img/category/12.png" alt="карточка товара">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="nav">
+          <h2 class="title">Популярные товары</h2>
+        </div>
+        <div class="product__inner">
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="img/product/1.png" alt="карточка товара">
+            <div class="product__body">
+              <p class="product__caption">Керамогранит Yasmin 598х185 коричневый C-YA4M112D</p>
+              <div class="product__price price-new">449 ₽</div>
+              <a class="product__btn btn" href="">В корзину</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="container">
+        <div class="nav">
+          <h2 class="title">Популярные бренды</h2>
+          <a class="link" href="">
+            Все бренды
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 13L7 7L1 1" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div class="brands__content">
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/1.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/2.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/3.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/4.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/5.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/6.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/7.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/8.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/9.png" alt="бренд"></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/10.png" alt=бренд""></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/11.png" alt=бренд""></a>
+          <a class="brands__link" href=""><img class="brands__img" src="img/brands/12.png" alt=бренд""></a>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="container">
+        <div class="nav">
+          <h2 class="title">Отзывы</h2>
+        </div>
+        <div class="review-slider">
+          <div class="review-slider__card">
+            <div class="review-slider__item">
+              <div class="review-slider__box">
+                <div class="review-slider__user">
+                  <img class="review-slider__avatar" src="img/icons/avatar.svg" alt="аватар пользователя">
+                  <span class="review-slider__name">Пётр</span>
+                </div>
+                <p class="review-slider__text">Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽</p>
+                <p class="review-slider__date">21 марта 2022 г.</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-slider__card">
+            <div class="review-slider__item">
+              <div class="review-slider__box">
+                <div class="review-slider__user">
+                  <img class="review-slider__avatar" src="img/icons/avatar.svg" alt="аватар пользователя">
+                  <span class="review-slider__name">Пётр</span>
+                </div>
+                <p class="review-slider__text">Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽</p>
+                <p class="review-slider__date">21 марта 2022 г.</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-slider__card">
+            <div class="review-slider__item">
+              <div class="review-slider__box">
+                <div class="review-slider__user">
+                  <img class="review-slider__avatar" src="img/icons/avatar.svg" alt="аватар пользователя">
+                  <span class="review-slider__name">Пётр</span>
+                </div>
+                <p class="review-slider__text">Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽</p>
+                <p class="review-slider__date">21 марта 2022 г.</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-slider__card">
+            <div class="review-slider__item">
+              <div class="review-slider__box">
+                <div class="review-slider__user">
+                  <img class="review-slider__avatar" src="img/icons/avatar.svg" alt="аватар пользователя">
+                  <span class="review-slider__name">Пётр</span>
+                </div>
+                <p class="review-slider__text">Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽</p>
+                <p class="review-slider__date">21 марта 2022 г.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__wrapper">
+        <div class="container">
+          <div class="about__inner">
+            <h2 class="title about__title">О компании</h2>
+            <p class="about__text">В СтройкаСтор вы всегда можете купить все необходимые товары для ремонта домаи дачи. Хотите сделать ремонт в квартире? Строите загородный дом? Используйте строительные и отделочные материалы из нашего каталога.</p>
+            <p class="about__text">Быстрая доставка строительных товаров по низким ценам сделает ваши покупки более приятными. Ремонт может стоить дешево, если делать его с нами. Для вас всегда в наличии более 30 000 товаров для строительства по низким ценам каждый день. СтройкаСтор — это широкий ассортимент товаров для дома и ремонта недорого; Возможность заказать строительные и отделочные материалы для дома и дачи.</p>
+          </div>
+        </div>
+    </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -155,10 +508,27 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
     let btn = document.querySelector('.header-middle__btn');
       btn.addEventListener('click', function () {
       btn.classList.toggle('header-middle__btn--active');
+    })
+    $(document).ready(function(){
+      $('.slider').slick({
+        fade: true,
+        cssEase: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
+        prevArrow: '<button type="button" class="slick-prev"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 8H1" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L1 8L8 15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8H15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L15 8L8 15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+      })
+    })
+    $('.review-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      cssEase: 'linear',
+      prevArrow: '<button type="button" class="slick-prev"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 8H1" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L1 8L8 15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8H15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L15 8L8 15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
     })
   </script>
 </body>

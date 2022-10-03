@@ -21,3 +21,18 @@
   font-weight: 700;
   font-style: normal;
 }
+%full-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%slick-arrow {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #d1d1d3;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+}

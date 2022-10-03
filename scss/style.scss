@@ -17,6 +17,10 @@
     font-size: 15px;
     line-height: 145%;
     color: #5d6066;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      color: #2f323a;
+    }
   }
   &__list {
     display: flex;
@@ -28,10 +32,18 @@
     font-size: 15px;
     line-height: 145%;
     color: #5d6066;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      color: #2f323a;
+    }
   }
 }
 .header-middle {
   padding: 16px 0;
+  position: sticky;
+  left: 0;
+  right: 0;
+  width: 100%;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -150,6 +162,408 @@
   &__link {
     color: #454950;
   }
+}
+
+.slider {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 40px 0;
+  &__item,
+  &__card {
+    width: 100%;
+  }
+  &__card {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__inner {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+  }
+  &__title {
+    max-width: 570px;
+    @extend %Manrope-Bold-700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #171b24;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    max-width: 278px;
+    display: inline-block;
+    @extend %Manrope-Regular-400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #454950;
+  }
+  &__subtitle--second {
+    max-width: 570px;
+  }
+  &__more {
+    display: block;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 136%;
+    color: #171b24;
+    padding: 12px 24px;
+    background: #fcec41;
+    margin-top: auto;
+  }
+  .slick-arrow {
+    bottom: 80px;
+    right: 94px;
+    @extend %slick-arrow;
+  }
+  .slick-prev.slick-arrow {
+    right: 158px;
+    z-index: 1;
+  }
+}
+.discount {
+  padding: 40px 0px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px 16px;
+  }
+  &__card {
+    display: flex;
+    border: 1px solid #e8e9ea;
+    max-width: 557px;
+    position: relative;
+    .discount__span {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+  }
+  &__img {
+    width: 278px;
+    height: 208px;
+    object-fit: cover;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  &__heading {
+    @extend %Manrope-Medium-500;
+    color: #2f323a;
+  }
+  &__span {
+    padding: 4px 8px;
+    background: #fff;
+    border: 2px solid #fbe303;
+    font-size: 15px;
+    line-height: 145%;
+    color: #171b24;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 0 8px;
+    margin-top: auto;
+  }
+  &__price-new {
+    @extend %Manrope-Bold-700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #171b24;
+  }
+  &__price-old {
+    @extend %Manrope-Medium-500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8b8d92;
+  }
+  &__cart {
+    width: 100%;
+  }
+}
+.category {
+  padding: 40px 0;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px 0px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background: #f6f6f6;
+    max-width: 180px;
+    min-height: 180px;
+    padding-top: 12px;
+    overflow: hidden;
+    &:hover {
+      transition: all 0.4s ease-in-out;
+      background: #fcec41;
+      .category__img {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__heading {
+    font-size: 18px;
+    line-height: 136%;
+    color: #2f323a;
+  }
+  &__img {
+    width: 180px;
+    height: 128px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+}
+.product {
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px 0px;
+  }
+  &__card {
+    max-width: 278px;
+    min-height: 416px;
+    border: 1px solid #e8e9ea;
+  }
+  &__img {
+    width: 278px;
+    height: 208px;
+    object-fit: cover;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    min-height: calc(416px - 208px);
+  }
+  &__caption {
+    color: #2f323a;
+  }
+  &__price {
+    margin: auto 0 16px;
+  }
+  &__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+.brands {
+  padding: 40px 0;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px 0;
+  }
+  &__link {
+    max-width: 180px;
+    border: 1px solid #e8e9ea;
+    transition: all 0.5s ease-in;
+    &:hover {
+      border: 1px solid #5d6066;
+    }
+  }
+  &__img {
+    width: 180px;
+    height: 124px;
+    object-fit: cover;
+  }
+}
+.review {
+  padding: 40px 0;
+  background: #f6f6f6;
+}
+.review-slider {
+  &__item,
+  &__card {
+    max-width: 376px;
+  }
+  &__item {
+    min-height: 365px;
+    background: #fff;
+    padding: 24px;
+    border: 1px solid #e8e9ea;
+    color: #2f323a;
+    margin: 0 6px;
+  }
+  &__box {
+    background: url("../img/icons/blockquote.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    margin-bottom: 12px;
+  }
+  &__name {
+    @extend %Manrope-Bold-700;
+    font-size: 18px;
+    line-height: 136%;
+  }
+  &__text {
+    @extend %Manrope-Regular-400;
+    margin-bottom: 15px;
+  }
+  &__date {
+    font-size: 15px;
+    line-height: 145%;
+    color: #8b8d92;
+  }
+  .slick-arrow {
+    top: -68px;
+    right: 0px;
+    @extend %slick-arrow;
+  }
+  .slick-prev.slick-arrow {
+    right: 64px;
+  }
+}
+.about {
+  padding: 40px 0;
+  max-width: 1360px;
+  margin: 0 auto;
+  &__wrapper {
+    background: url("../img/about-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__inner {
+    max-width: 670px;
+    padding: 88px 0 88px 98px;
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__text {
+    @extend %Manrope-Regular-400;
+    color: #2f323a;
+  }
+  &__text + .about__text {
+    margin-top: 30px;
+  }
+}
+.breadcrumbs {
+  &__inner {
+    background-image: url("../img/breadcrumbs-brands.png");
+  }
+  &__wrapper {
+    padding-bottom: 90px;
+  }
+  &__item + .breadcrumbs__item {
+    margin-left: 25px;
+  }
+}
+.brands-filter {
+  padding: 40px 0;
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+  }
+  &__link {
+    display: grid;
+    place-items: center;
+    padding: 4px 8px;
+    background: #fff;
+    border: 1px solid #d1d1d3;
+    font-size: 18px;
+    line-height: 136%;
+    color: #171b24;
+  }
+  &__link--active {
+    background: #fbe303;
+    border-color: #fbe303;
+  }
+}
+.breadcrumbs-delivery {
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    max-width: 520px;
+    @extend %Manrope-Regular-400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #2f323a;
+  }
+  &__wrapper {
+    padding-bottom: 60px;
+  }
+}
+.delivery-step {
+  padding: 40px 0;
+  &__heading {
+    margin-bottom: 32px;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 16px;
+  }
+  &__item {
+    max-width: 278px;
+    min-height: 140px;
+  }
+  &__img {
+    margin-bottom: 12px;
+  }
+  &__description {
+    color: #2f323a;
+  }
+}
+.delivery-accordeon {
+  padding: 40px 0 80px;
+  &__inner {
+    border: 1px solid #d1d1d3;
+  }
+  &__wrapper {
+    padding: 80px 0;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+  }
+  .question {
+    text-align: left;
+    width: 100%;
+    padding: 16px 20px;
+    background: #f6f6f6;
+  }
+}
+.answer {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  @extend %Manrope-Regular-400;
+  color: #2f323a;
+}
+
+.is-active + .answer {
+  height: auto;
+  padding: 10px 0;
+  padding: 16px 20px;
+  background: darkkhaki;
 }
 
 .footer {
