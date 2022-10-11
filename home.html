@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Главная страница</title>
 </head>
-<body>
+<body><!---->
   <header class="header">
     <div class="header-top">
       <div class="container">
@@ -110,7 +110,7 @@
       <div class="slider__item">
         <div class="slider__card" style="background: url('img/slider-bg-2.png') center no-repeat;">
           <div class="container">
-            <div class="slider__inner">
+            <div class="slider__inner slider__inner--second">
               <h1 class="slider__title">Распродажа инструментов</h1>
               <span class="slider__subtitle slider__subtitle--second">«СтройкаСтор» стремится сделать условия покупки максимально выгодными для каждого покупателя, поэтому на сайте регулярно появляются товары со скидкой</span>
               <a class="slider__more" href="">Подробнее</a>
@@ -120,8 +120,7 @@
       </div>
 
     </section>
-
-    <section class="discount">
+    <section class="discount" style="display: none;">
       <div class="container">
         <div class="nav">
           <h2 class="title">Акции</h2>
@@ -184,7 +183,7 @@
         </div>
       </div>
     </section>
-    <section class="category">
+    <section class="category" style="display: none;">
       <div class="container">
         <div class="nav">
           <h2 class="title">Популярные категории</h2>
@@ -247,7 +246,7 @@
         </div>
       </div>
     </section>
-    <section class="product">
+    <section class="product" style="display: none;">
       <div class="container">
         <div class="nav">
           <h2 class="title">Популярные товары</h2>
@@ -352,7 +351,7 @@
         </div>
       </div>
     </section>
-    <section class="brands">
+    <section class="brands" style="display: none;">
       <div class="container">
         <div class="nav">
           <h2 class="title">Популярные бренды</h2>
@@ -379,7 +378,7 @@
         </div>
       </div>
     </section>
-    <section class="review">
+    <section class="review" style="display: none;">
       <div class="container">
         <div class="nav">
           <h2 class="title">Отзывы</h2>
@@ -436,7 +435,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" style="display: none;">
       <div class="about__wrapper">
         <div class="container">
           <div class="about__inner">
@@ -521,6 +520,22 @@
         cssEase: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
         prevArrow: '<button type="button" class="slick-prev"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 8H1" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L1 8L8 15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
         nextArrow: '<button type="button" class="slick-next"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8H15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L15 8L8 15" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        responsive: [
+          {
+            breakpoint: 601,
+            settings: {
+              arrows: true,
+            }
+          },
+          {
+            breakpoint: 376,
+            settings: {
+              dots: true,
+              arrows: false,
+              adaptiveHeight: true
+            }
+          }
+        ]
       })
     })
     $('.review-slider').slick({
