@@ -1,0 +1,154 @@
+@media (max-width: 1100px) {
+  .header-nav {
+    &__link {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 1065px) {
+  .header-middle {
+    &__form {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-middle {
+    border-bottom: 1px solid #e8e9ea;
+    &__form {
+      width: 248px;
+    }
+  }
+  .header-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 885px) {
+  .header-middle {
+    &__btn {
+      padding: 10px 15px;
+      gap: 5px;
+    }
+    &__link {
+      width: 75px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 855px) {
+  .header-middle {
+    &__form {
+      width: 225px;
+    }
+    &__link {
+      width: 65px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-middle {
+    padding: 10px 0 9px;
+    &__inner {
+      flex-wrap: wrap;
+      gap: 10px 0;
+    }
+    &__form {
+      width: 100%;
+      order: 1;
+    }
+    &__btn {
+      margin: 0 auto 0 10px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    &__list {
+      gap: 0 10px;
+    }
+  }
+  .header-middle {
+    &__link {
+      display: none;
+    }
+    &__link:last-child {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header-top {
+    &__item:first-child,
+    &__item:nth-child(4) {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header-middle {
+    &__btn {
+      margin: 0 auto;
+      padding: 6px 10px;
+      gap: 0;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .header-middle {
+    &__btn {
+      margin: 0 auto 0 0;
+      order: -1;
+    }
+  }
+  .logo {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 405px) {
+  .header-middle {
+    &__inner {
+      align-items: center;
+    }
+    &__btn {
+      font-size: 0;
+      padding: 5px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header-middle {
+    &__link:last-child {
+      //background: sandybrown;
+      font-size: 0;
+      padding: 0;
+      width: fit-content;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .header-middle {
+    &__btn {
+      background: transparent;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header-top {
+    display: none;
+  }
+}
