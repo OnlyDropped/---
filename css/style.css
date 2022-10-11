@@ -31,7 +31,7 @@
   font-display: swap;
 }
 
-.breadcrumbs__link, .slider__subtitle, .review-slider__text, .about__text, .breadcrumbs-delivery__text, .delivery-accordeon__box .delivery-accordeon__body, .breadcrumbs-return__text, .product-main__provider, .product-main__text {
+.breadcrumbs__link, .slider__subtitle, .review-slider__text, .about__text, .breadcrumbs-delivery__text, .delivery-accordeon__box .delivery-accordeon__body, .breadcrumbs-return__text, .product-main__provider, .product-main__text, .product-description__box {
   font-family: "Manrope-Regular", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -71,7 +71,7 @@ textarea::placeholder, .btn, .discount__heading, .discount__price-old, .delivery
   font-style: normal;
 }
 
-.price-new, .breadcrumbs-title, .slider__title, .discount__price-new, .review-slider__name, .category-main__title {
+.price-new, .breadcrumbs-title, .slider__title, .discount__price-new, .review-slider__name, .category-main__title, .error__title {
   font-family: "Manrope-Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1965,12 +1965,85 @@ textarea::placeholder {
 
 .product-main__text::before {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   width: 24px;
   height: 24px;
   background: url("../img/icons/delivery.svg");
+}
+
+.product-description {
+  margin-bottom: 80px;
+}
+
+.product-description__inner {
+  border: 1px solid #e8e9ea;
+  border-radius: 10px;
+  padding: 60px 200px;
+}
+
+.product-description__title {
+  margin-bottom: 20px;
+}
+
+.product-description__box + .product-description__box {
+  margin-top: 20px;
+}
+
+.product-description__span {
+  display: block;
+}
+
+.product-description__box {
+  font-size: 16px;
+  line-height: 150%;
+  color: #2f323a;
+}
+
+.product-duplicate {
+  padding-bottom: 80px;
+}
+
+.product-duplicate__title {
+  margin-bottom: 20px;
+}
+
+.product-duplicate__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 16px;
+}
+
+.error {
+  padding: 80px 0;
+}
+
+.error__inner {
+  max-width: 580px;
+  border: 1px solid #d1d1d3;
+  margin: 0 auto;
+  padding: 36px;
+  text-align: center;
+}
+
+.error__title {
+  font-size: 48px;
+  line-height: 120%;
+  color: #171b24;
+  margin-bottom: 8px;
+}
+
+.error__text {
+  margin: 8px 0 24px;
+}
+
+.error__back {
+  display: inline-block;
 }
 
 .footer {
