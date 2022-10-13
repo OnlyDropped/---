@@ -655,6 +655,19 @@
   &__inner {
     display: flex;
   }
+  &__button {
+    max-width: 100%;
+    width: 100%;
+    @extend %full-flex;
+    padding: 12px 0px 16px;
+    gap: 8px;
+    border: 1px solid #d1d1d3;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 136%;
+    color: #171b24;
+    display: none;
+  }
   &__filter {
     width: 278px;
     padding: 16px;
@@ -1148,7 +1161,7 @@
   &__text {
     margin: 8px 0 24px;
   }
-  &__back{
+  &__back {
     display: inline-block;
   }
 }
@@ -1200,4 +1213,6 @@
 }
 @import "media--header";
 @import "home";
+@import "delivery";
+@import "category";
 @import "media--footer";

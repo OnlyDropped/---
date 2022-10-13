@@ -94,7 +94,7 @@
     
   </header>
   <main class="main">
-    <section class="breadcrumbs breadcrumbs-category">
+    <section class="breadcrumbs breadcrumbs-category"">
       <div class="breadcrumbs__inner breadcrumbs-category__inner">
         <div class="container">
           <div class="breadcrumbs__wrapper breadcrumbs-category__wrapper">
@@ -111,6 +111,27 @@
     </section>
     <section class="category-main">
       <div class="container">
+        <button class="category-main__button">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_4518_3063)">
+            <path d="M4.5 21V14" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.5 10V3" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 21V12" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 8V3" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.5 21V16" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.5 12V3" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.5 14H7.5" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.5 8H15.5" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 16H23.5" stroke="#454950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_4518_3063">
+            <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+            </clipPath>
+            </defs>
+          </svg>
+          Фильтры
+        </button>
         <div class="category-main__inner">
           <div class="category-main__filter">
 
@@ -493,6 +514,13 @@
     function show(a) {
       document.querySelector('.text02').value = a;
     }
+
+    const categoryBtn = document.querySelector('.category-main__button');
+    const categoryFilter = document.querySelector('.category-main__filter');
+    
+    categoryBtn.addEventListener('click', function () {
+      categoryFilter.classList.toggle('category-main__filter--active');
+    })
   </script>
 </body>
 </html>
